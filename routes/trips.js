@@ -1,5 +1,5 @@
 var express = require('express');
-var router  = express.Router();
+var router = express.Router();
 
 var trips_controller = require('../controllers/trips_controller');
 var isAuthenticated = require("../config/middleware/isAuthenticated");
