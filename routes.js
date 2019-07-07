@@ -17,9 +17,8 @@ module.exports = function (app) {
 	app.use('/services', services);
 	app.use('/appointment', appointment);
 	app.use('/contact', contact);
-	app.use('/user', application);
+	app.use('/admin', application);
 	app.use('/users', users);
 	app.use('/trips', trips);
 	app.use('/pricing', pricing);
-	//other routes..
 }
