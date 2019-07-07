@@ -274,10 +274,11 @@ ul.banner-social-buttons {
   }
 }
 footer {
-  padding: 50px 0;
+  padding: 10px 0;
+  background-color: #1d9b6c;
 }
 footer p {
-  margin: 0;
+  font-size: 15px;
 }
 
 body {
