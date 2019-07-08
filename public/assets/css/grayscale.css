@@ -99,6 +99,33 @@ a{
   background-color: #5c6bc0;
 }
 
+.btn.appointment{
+  background-color: #1f295e;
+}
+
+
+/* team page */
+
+
+.parallax-container{
+ height: 950px;
+}
+
+.parallax h3{
+ margin-top: 100px;
+ position: relative;
+ z-index: 100;
+ text-align: center;
+ color: aliceblue;
+ font-weight: bold;
+}
+
+.card{
+  margin-top:200px;
+  z-index: 2;
+}
+
+
 
 /* Ipad-responsiveness */
 
@@ -110,6 +137,8 @@ a{
 
 /* Mobile-responsiveness */
 @media screen and (max-width:670px){
+
+  /* index */
   #menu img{
       height: 300px;
   }
@@ -132,6 +161,11 @@ a{
 
   .footer-form{
       margin-left:10px;
+  }
+
+  /* team */
+  .card{
+      margin-top:10px;
   }
   
 }
