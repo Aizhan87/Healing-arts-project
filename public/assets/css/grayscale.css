@@ -108,7 +108,7 @@ a{
 
 
 .parallax-container{
- height: 950px;
+ height: 750px;
 }
 
 .parallax h3{
@@ -120,19 +120,47 @@ a{
  font-weight: bold;
 }
 
-.card{
+.team-member{
   margin-top:200px;
-  z-index: 2;
+  background-color: aliceblue;
+  border: 30px solid aliceblue;
 }
 
+.team-member img{
+  width: 200px;
+  text-align: center;
+  float: left;
+  padding-right: 20px;
+}
+span {
+  padding-top: 10px;
+  display: inline-block;
+}
 
 
 /* Ipad-responsiveness */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
+  /* index */
   #menu img,  #menu h4{
       margin-left: 40px;
   }
+  .team-member{
+      margin-top:100px;
+  }
+  .parallax-container{
+      height: 950px;
+   }
+
+   /* team */
+   .team-member{
+      margin-top:10px;
+  }
+
+  .about-team{
+      margin-top:200px;
+  }
+
 }
 
 /* Mobile-responsiveness */
@@ -164,7 +192,19 @@ a{
   }
 
   /* team */
-  .card{
+  .team-member{
+      margin-top:10px;
+  }
+
+  .team-member img{
+      width: 100px;
+  }
+
+  .parallax-container{
+      height: 1000px;
+   }
+
+   .about-team{
       margin-top:10px;
   }
   
