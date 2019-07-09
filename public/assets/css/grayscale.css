@@ -8,10 +8,46 @@ body {
   font-size: 14px; 
 }
 
+/* Admin */
+
+#admin-body{
+  background-image: url(/assets/img/saffu-Ct1Mx5OTn9A-unsplash.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#login-modal{
+  text-align: center;
+  border-radius: 10px;
+  width: 600px;
+  height: 350px;
+}
+
+#username-input, #password-input{
+  width:300px;
+  text-align: center;
+}
+
+.login-help a{
+  color: #1f295e;
+}
+
 /* nav */
 
 .nav-wrapper{
   background-color: #5c6bc0;
+}
+
+.navbar-nav>li>a{
+  padding-top:20px;
+}
+
+.brand-logo{
+  margin-left: 20px;
+}
+
+ul>li:last-child{
+  margin-right:20px;
 }
 
 /* menu section */
@@ -145,6 +181,7 @@ span {
   #menu img,  #menu h4{
       margin-left: 40px;
   }
+
   .team-member{
       margin-top:100px;
   }
@@ -169,6 +206,7 @@ span {
   /* index */
   #menu img{
       height: 300px;
+      margin-left: 0;
   }
 
   #menu h4{
@@ -176,6 +214,7 @@ span {
       position: absolute;
       font-size: 25px;
       width:170px;
+      margin-left: 0;
   }
   
   #massage-benefits,#about{
@@ -185,6 +224,7 @@ span {
 
   nav .brand-logo{
       font-size:18px;
+      margin-left: 0;
   }
 
   .footer-form{
