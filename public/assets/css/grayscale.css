@@ -6,6 +6,7 @@ html{
 body {
   font-family: 'El Messiri', sans-serif;
   font-size: 14px; 
+  margin: 0;
 }
 
 /* Admin */
@@ -53,7 +54,8 @@ ul>li:last-child{
   margin-right:20px;
 }
 
-/* menu section */
+
+/* Index */
 
 #menu img{
   height: 500px;
@@ -142,6 +144,61 @@ a{
   background-color: #1f295e;
 }
 
+/* About Us page */
+
+.hero {
+  width: 100vw;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white; 
+  background-image: url('/assets/img/main-blurred.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.hero h1 {
+  font-size: 5em;
+  margin-top: 30px;
+  margin-bottom: 0.5em;
+}
+
+/* .hero .btn {
+  display: block;
+  width: 200px;
+  padding: 1em;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white; 
+  text-decoration: none;
+  font-size: 1.5em;
+  border: 3px solid white; 
+  border-radius: 20px;
+} */
+
+
+.about-content{
+  margin-top:30px;
+  background-color: aliceblue;
+  border: 30px solid aliceblue;
+}
+
+.about-content img{
+  width: 200px;
+  text-align: center;
+  float: left;
+  padding-right: 20px;
+  position: relative;
+}
+
+.about-content h6{
+  text-align: right;
+}
 
 /* team page */
 
