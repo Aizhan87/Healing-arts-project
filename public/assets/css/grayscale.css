@@ -10,22 +10,25 @@ body {
 
 /* Admin */
 
-#admin-body{
+#admin-body, #registration-body{
   background-image: url(/assets/img/saffu-Ct1Mx5OTn9A-unsplash.jpg);
   background-size: cover;
   background-attachment: fixed;
+}
+
+#registration-container{
+  width: 50%;
+  background-color: aliceblue;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom:20px;
 }
 
 #login-modal{
   text-align: center;
   border-radius: 10px;
   width: 600px;
-  height: 350px;
-}
-
-#username-input, #password-input{
-  width:300px;
-  text-align: center;
+  height: 400px;
 }
 
 .login-help a{
@@ -177,6 +180,13 @@ span {
 /* Ipad-responsiveness */
 
 @media screen and (max-width: 800px) {
+
+  /* Admin */
+
+  #registration-container{
+    width: 80%;
+  }
+
   /* index */
   #menu img,  #menu h4{
       margin-left: 40px;
@@ -202,6 +212,11 @@ span {
 
 /* Mobile-responsiveness */
 @media screen and (max-width:670px){
+
+  /* Admin */
+  #registration-container{
+    width: 100%;
+  }
 
   /* index */
   #menu img{
