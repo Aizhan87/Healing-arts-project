@@ -1,7 +1,11 @@
 {
   "development": {
     "username": "root",
+<<<<<<< HEAD
     "password": "violeta86",
+=======
+    "password": "zeytin3099",
+>>>>>>> bc160dfed89f82e9db5ab2a69fe7256243ba4ae2
     "database": "travelSecure_development",
     "host": "127.0.0.1",
     "dialect": "mysql"
