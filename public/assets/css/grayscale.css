@@ -97,13 +97,6 @@ ol {
   -moz-columns: 2;
 }
 
-/* contact us */
-
-#contact-container{
-  width: 50%;
-}
-
-
 /* footer */
 
 .fas{
@@ -134,12 +127,16 @@ width: 80%;
   padding:20px;
 }
 
+.map,#footer-content{
+  margin-top:20px;
+}
+
 a{
   color: white;
 }
 
 .page-footer{
-  padding:20px;
+  padding:0;
 }
 
 .btn{
@@ -239,6 +236,26 @@ span {
   display: inline-block;
 }
 
+/* contact us */
+
+#contact-container{
+  width: 50%;
+  background-color: aliceblue;
+  margin-top:50px;
+  margin-bottom:50px;
+  padding:20px;
+  border-radius: 5px;
+}
+
+#contact-page{
+  background-image: url(/assets/img/waterfall-blurred.jpg)
+}
+
+#contact-container h5{
+  color: #5c6bc0;
+  font-weight: bold;
+}
+
 
 /* Ipad-responsiveness */
 
@@ -324,6 +341,11 @@ span {
 
    .about-team{
       margin-top:10px;
+  }
+
+  /* about */
+  #contact-container{
+    width: 80%;
   }
   
 }
