@@ -97,6 +97,12 @@ ol {
   -moz-columns: 2;
 }
 
+/* contact us */
+
+.contact-container{
+  width: 50%;
+}
+
 
 /* footer */
 
@@ -133,7 +139,7 @@ a{
 }
 
 .page-footer{
-  padding:0;
+  padding:20px;
 }
 
 .btn{
