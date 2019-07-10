@@ -1,49 +1,45 @@
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-    {{> nav-customer }}
-    {{!-- {{> login-modal }} --}}
-    <!-- Intro Header -->
-    <header class="intro">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
+{{> nav-customer }}
 
-
-                        <h1>This is Contact page</h1>
-                    </div>
+<div class="contact-container">
+    <div class="row">
+        <div class="col s12">
+            <form class="footer-form">
+                <div class="input-field">
+                    <i class="material-icons prefix">person</i>
+                    <input type="text" id="client_name" class="validate">
+                    <label for="client_name">Your Name</label>
                 </div>
-            </div>
+                <div class="input-field">
+                    <i class="material-icons prefix">email</i>
+                    <input type="email" id="client_email" class="validate">
+                    <label for="client_email">Your Email</label>
+                </div>
+                <div class="input-field">
+                    <i class="material-icons prefix">phone</i>
+                    <input id="client_phone" type="tel" class="validate">
+                    <label for="client_phone">Your Telephone</label>
+                </div>
+                <div class="input-field">
+                    <select>
+                        <option value="" disabled selected>Choose the service</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                    </select>
+                </div>
+
+                <div class="input-field">
+                    <i class="material-icons prefix">message</i>
+                    <textarea id="client_message" class="materialize-textarea" cols="20" rows="20"
+                        class="validate"></textarea>
+                    <label for="client_message">Your Message</label>
+                </div>
+                <div class="input-field center">
+                    <button class="btn">Submit</button>
+                </div>
+            </form>
         </div>
-    </header>
+    </div>
+</div>
 
-    <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact Start Bootstrap</h2>
-                <p>Feel free to email us to provide some feedback on our templates, give us suggestions for new
-                    templates and themes, or to just say hello!</p>
-                <p><a href="mailto:trnrtim@aol.com">trnrtim@aol.com</a>
-                </p>
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i
-                                class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i
-                                class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                    </li>
-                    <li>
-                        <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i
-                                class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Map Section -->
-    <div id="map"></div>
-
-    {{> footer}}
+{{> footer}}
