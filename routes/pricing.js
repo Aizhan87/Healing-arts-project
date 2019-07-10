@@ -1,5 +1,5 @@
 var express = require('express');
-var router  = express.Router();
+var router = express.Router();
 
 var pricing_controller = require('../controllers/pricing_controller');
 

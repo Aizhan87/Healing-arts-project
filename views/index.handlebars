@@ -1,65 +1,50 @@
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-    {{> nav }}
-    {{> login-modal }}
-    <!-- Intro Header -->
-    <header class="intro">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h2 class="brand-heading">Create peace of mind</h2>
-                        <h2>Learn more</h2>
-                        <h3><a class="page-scroll" data-toggle="modal" data-target="#login-modal">Sign Up</a> for free
-                            and you get:</h3>
-                        <ul class="positives_list">
-                            <li>Streaming updates on security status using a variety of different factors.</li>
-                            <li>Locations of active safe zones and hospitals, police, and more</li>
-                            <li>Highly customized for each, specific region using security data for the locations you'll
-                                be traveling to.</li>
-                        </ul>
-                        </ul>
-                        <a href="#contact" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
-                    </div>
-                </div>
+{{> nav-customer }}
+<!-- menu -->
+<div class="row" id="menu">
+
+    <div class="col s6 m6 l3">
+        <h4>Meditation</h4><img src="assets/img//adrian-motroc-DhIarbBYCWU-unsplash.jpg" alt="">
+    </div>
+    <div class="col s6 m6 l3">
+        <h4>Healing</h4><img src="assets/img/darius-bashar-xMNel_otvWs-unsplash.jpg" alt="">
+    </div>
+    <div class="col s6 m6 l3">
+        <h4>Massage</h4><img src="assets/img/female-relaxing-at-spa.jpg" alt="">
+    </div>
+    <div class="col s6 m6 l2">
+        <h4>Rehabilitation</h4><img src="assets/img/toa-heftiba-a9pFSC8dTlo-unsplash.jpg" alt="">
+    </div>
+</div>
+
+<section id="about">
+    <div class="row">
+        <div class="col s12 m6">
+            <div class="center-align">
+                <h5 class="indigo-text text-darken-4">Welcome to The Healing Arts Center</h5>
+                <h6>Beverly Hills</h6>
             </div>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </div>
-    </header>
-
-    <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact Start Bootstrap</h2>
-                <p>Feel free to email us to provide some feedback on our templates, give us suggestions for new
-                    templates and themes, or to just say hello!</p>
-                <p><a href="mailto:trnrtim@aol.com">trnrtim@aol.com</a>
-                </p>
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i
-                                class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i
-                                class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                    </li>
-                    <li>
-                        <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i
-                                class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
-                    </li>
-                </ul>
-            </div>
+        <div class="col s12 m5" id="massage-benefits">
+            <h5 class="center-align">Benefits of Massage</h5>
+            <ol>
+                <li>Reduce Stress</li>
+                <li>Improve Circulation</li>
+                <li>Reduce Pain</li>
+                <li>Eliminate Toxins</li>
+                <li>Reduce Fatique</li>
+                <li>Enhance Immunity</li>
+                <li>Speeds Healing</li>
+                <li>Joint Mobilization</li>
+            </ol>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Map Section -->
-    <div id="map"></div>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container text-center">
-            <p>Copyright &copy; Your Website 2016</p>
-        </div>
-    </footer>
+{{>footer}}
