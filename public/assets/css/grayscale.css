@@ -237,7 +237,8 @@ a{
 /* appointment page */
 
 #appointment-body{
-  background-image: url(/assets/img/balanced-blurred.jpg)
+  background-image: url(/assets/img/balanced-stones.jpg);
+  background-attachment: fixed;
 }
 
 #appointment-body h3{
