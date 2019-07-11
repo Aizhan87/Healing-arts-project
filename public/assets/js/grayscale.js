@@ -3,5 +3,8 @@ $(document).ready(function () {
     $('.materialboxed').materialbox();
     $('.parallax').parallax();
     $('select').formSelect();
+});
 
+AOS.init({
+    duration: 700,
 });
