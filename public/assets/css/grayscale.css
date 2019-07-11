@@ -190,6 +190,10 @@ a{
   position: relative;
 }
 
+.services-content, .other-services-content{
+  width: 450px;
+}
+
 /* team page */
 
 #team-body{
@@ -338,7 +342,11 @@ a{
   /* services */
 
   .services-content, .other-services-content{
-    height:450px;
+    height:350px;
   }
+
+.services.container{
+  margin-left:0;
+}
   
 }
