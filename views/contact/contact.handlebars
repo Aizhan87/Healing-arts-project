@@ -1,50 +1,46 @@
 <body id="contact-page">
     {{> nav-customer }}
 
-    <div class="container" id="contact-container" data-aos="flip-down">
-        <div class="row text-center">
-            <div class="col s12">
-                <h5>We value the feedback and queries from all our customers. </h5>
-                <h6> Your messages will be answered in a
-                    timely
-                    fashion.</h6>
-                <form>
-                    <div class="input-field">
-                        <i class="material-icons prefix">person</i>
-                        <input type="text" id="client_name" class="validate">
-                        <label for="client_name">Your Name</label>
-                    </div>
-                    <div class="input-field">
-                        <i class="material-icons prefix">email</i>
-                        <input type="email" id="client_email" class="validate">
-                        <label for="client_email">Your Email</label>
-                    </div>
-                    <div class="input-field">
-                        <i class="material-icons prefix">phone</i>
-                        <input id="client_phone" type="tel" class="validate">
-                        <label for="client_phone">Your Telephone</label>
-                    </div>
-                    <div class="input-field">
-                        <i class="material-icons prefix"></i>
-                        <select>
-                            <option value="" disabled selected>Choose the service</option>
-                            <option value="1">Option 1</option>
-                            <option value="2">Option 2</option>
-                            <option value="3">Option 3</option>
-                        </select>
-                    </div>
+<div class="container" id="contact-container">
+    <div class="row text-center">
+        <div class="col s12">
+            <h5>We value the feedback and queries from all our customers. Your messages will be answered in a timely
+                fashion.</h5>
+            <form action= "/burger/add" method="POST">
+                <div class="input-field">
+                    <i class="material-icons prefix">person</i>
+                    <input type="text" id="name" class="validate" name="name">
+                    <label for="name">Your Name</label>
+                </div>
+                <div class="input-field">
+                    <i class="material-icons prefix">email</i>
+                    <input type="email" id="email" class="validate" name="email">
+                    <label for="email">Your Email</label>
+                </div>
+                <div class="input-field">
+                    <i class="material-icons prefix">phone</i>
+                    <input id="phone" type="tel" class="validate" name="phone">
+                    <label for="phone">Your Telephone</label>
+                </div>
+                <div class="input-field">
+                    <select>
+                        <option value="" disabled selected>Choose the service</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                    </select>
+                </div>
 
-                    <div class="input-field">
-                        <i class="material-icons prefix">message</i>
-                        <textarea id="client_message" class="materialize-textarea" cols="20" rows="20"
-                            class="validate"></textarea>
-                        <label for="client_message">Your Message</label>
-                    </div>
-                    <div class="input-field center">
-                        <button class="btn" id="submit-form">Submit</button>
-                    </div>
-                </form>
-            </div>
+                <div class="input-field">
+                    <i class="material-icons prefix">message</i>
+                    <textarea id="message" class="materialize-textarea" cols="20" rows="20"
+                        class="validate" name="message"></textarea>
+                    <label for="message">Your Message</label>
+                </div>
+                <div class="input-field center">
+                    <button class="btn" type="submit">Submit</button>
+                </div>
+            </form>
         </div>
     </div>
 

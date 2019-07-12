@@ -1,3 +1,6 @@
+// Added by Burcu
+var path = require("path");
+
 module.exports = function (app) {
 
 	const customer = require('./routes/customer');
@@ -10,6 +13,7 @@ module.exports = function (app) {
 	const users = require('./routes/users');
 	const trips = require('./routes/trips');
 	const pricing = require('./routes/pricing');
+	var customer_database_controller = require("./controllers/customer_database_controller.js");
 
 	app.use('/', customer);
 	app.use('/about', about);
@@ -21,4 +25,7 @@ module.exports = function (app) {
 	app.use('/users', users);
 	app.use('/trips', trips);
 	app.use('/pricing', pricing);
+	app.use("/burger", customer_database_controller);
+
+
 }
