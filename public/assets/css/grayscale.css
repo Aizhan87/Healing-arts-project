@@ -97,13 +97,6 @@ ol {
   -moz-columns: 2;
 }
 
-/* contact us */
-
-#contact-container{
-  width: 50%;
-}
-
-
 /* footer */
 
 .fas{
@@ -134,12 +127,16 @@ width: 80%;
   padding:20px;
 }
 
+.map,#footer-content{
+  margin-top:20px;
+}
+
 a{
   color: white;
 }
 
 .page-footer{
-  padding:20px;
+  padding:0;
 }
 
 .btn{
@@ -173,28 +170,19 @@ a{
   margin-bottom: 0.5em;
 }
 
-/* .hero .btn {
-  display: block;
-  width: 200px;
-  padding: 1em;
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  color: white; 
-  text-decoration: none;
-  font-size: 1.5em;
-  border: 3px solid white; 
-  border-radius: 20px;
-} */
-
-
-.about-content{
-  margin-top:30px;
-  background-color: aliceblue;
-  border: 30px solid aliceblue;
+.about-content h6{
+  text-align: right;
 }
 
-.about-content img{
+
+.about-content, .services-content, .other-services-content{
+  margin-top:30px;
+  background-color: aliceblue;
+  border: 40px solid aliceblue;
+}
+
+.about-content img, .services-content img{
+  padding-bottom: 20px;
   width: 200px;
   text-align: center;
   float: left;
@@ -202,47 +190,124 @@ a{
   position: relative;
 }
 
-.about-content h6{
-  text-align: right;
+.services-content, .other-services-content{
+  width: 450px;
 }
 
 /* team page */
 
-
-.parallax-container{
- height: 750px;
+#team-body{
+  background-image: url('/assets/img/balance-blurred.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-.parallax h3{
- margin-top: 100px;
- position: relative;
- z-index: 100;
- text-align: center;
- color: aliceblue;
- font-weight: bold;
+#team-body h2{
+  color: white;
 }
 
-.team-member{
-  margin-top:200px;
+.team-content{
+  margin-top:30px;
   background-color: aliceblue;
-  border: 30px solid aliceblue;
+  border: 40px solid aliceblue;
+  height:300px;
 }
 
-.team-member img{
+.team-content img{
+  padding-bottom: 20px;
   width: 200px;
   text-align: center;
   float: left;
   padding-right: 20px;
-}
-span {
-  padding-top: 10px;
-  display: inline-block;
+  position: relative;
 }
 
+
+/* services */
+.services-hero{
+  width: 100vw;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white; 
+  background-image: url('/assets/img/candle-blurred.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.other-services-content img{
+  padding-bottom: 10px;
+  width: 150px;
+  text-align: center;
+  float: left;
+  padding-right: 20px;
+  position: relative;
+}
+
+.services-content, .other-services-content{
+  height:320px;
+}
+
+/* appointment page */
+
+#appointment-body{
+  background-image: url(/assets/img/balanced-stones.jpg);
+  background-attachment: fixed;
+}
+
+#appointment-body h3{
+  color: rgb(32, 46, 131);
+  text-shadow: 2px 2px white;
+  font-weight: bold;
+}
+
+
+/* contact us */
+
+#contact-container{
+  width: 50%;
+  background-color: aliceblue;
+  margin-top:50px;
+  margin-bottom:50px;
+  padding:20px;
+  border-radius: 5px;
+}
+
+#contact-page{
+  background-image: url(/assets/img/waterfall-blurred.jpg)
+}
+
+#contact-container h5{
+  color: #5c6bc0;
+  font-weight: bold;
+}
 
 /* Ipad-responsiveness */
+@media screen and (max-width: 1024px) {
+/* team */
+  .team-content{
+    height:350px;
+}
 
-@media screen and (max-width: 800px) {
+#menu img{
+  height: 400px;
+}
+
+#menu h4{
+  margin-top: 350px;
+  width:230px;
+}
+
+
+}
+
+@media screen and (max-width: 768px) {
 
   /* Admin */
 
@@ -255,21 +320,11 @@ span {
       margin-left: 40px;
   }
 
-  .team-member{
-      margin-top:100px;
-  }
-  .parallax-container{
-      height: 950px;
-   }
-
    /* team */
-   .team-member{
-      margin-top:10px;
+   .team-content{
+    height:500px;
   }
 
-  .about-team{
-      margin-top:200px;
-  }
 
 }
 
@@ -284,7 +339,7 @@ span {
   /* index */
   #menu img{
       height: 300px;
-      margin-left: 0;
+      margin-left: 30px;
   }
 
   #menu h4{
@@ -292,7 +347,7 @@ span {
       position: absolute;
       font-size: 25px;
       width:170px;
-      margin-left: 0;
+      margin-left: 30px;  
   }
   
   #massage-benefits,#about{
@@ -309,21 +364,25 @@ span {
       margin-left:10px;
   }
 
-  /* team */
-  .team-member{
-      margin-top:10px;
+
+  /* about */
+  #contact-container{
+    width: 80%;
   }
 
-  .team-member img{
-      width: 100px;
+/* team */
+.team-content{
+  height:700px;
+}
+
+  /* services */
+
+  .services-content, .other-services-content{
+    height:350px;
   }
 
-  .parallax-container{
-      height: 1000px;
-   }
-
-   .about-team{
-      margin-top:10px;
-  }
+.services.container{
+  margin-left:0;
+}
   
 }
