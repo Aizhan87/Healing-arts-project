@@ -339,7 +339,7 @@ a{
   /* index */
   #menu img{
       height: 300px;
-      margin-left: 0;
+      margin-left: 30px;
   }
 
   #menu h4{
@@ -347,7 +347,7 @@ a{
       position: absolute;
       font-size: 25px;
       width:170px;
-      margin-left: 0;
+      margin-left: 30px;  
   }
   
   #massage-benefits,#about{
