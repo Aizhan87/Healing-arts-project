@@ -1,53 +1,30 @@
-<!-- Navigation -->
-<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                Menu <i class="fa fa-bars"></i>
-            </button>
-            <a class="navbar-brand page-scroll" href="/">
-                <span class="light"><img class="shield-icon" src="/assets/img/logo.png"></span>
-            </a>
-        </div>
+<!-- navbar -->
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-            <ul class="nav navbar-nav">
-                <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                <li class="hidden">
-                    <a href="#page-top"></a>
-                </li>
+<div class="navbar-fixed">
+    <nav class="nav-wrapper">
+        <a href="/" class="brand-logo">The Healing Arts Center</a>
+        <a href="/" class="sidenav-trigger" data-target="mobile-links">
+            <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about/">About Us</a></li>
+            <li><a href="/team/">Our Team</a></li>
+            <li><a href="/services/">Services</a></li>
+            <li><a href="/appointment/" class="waves-effect waves-light btn appointment">Make Appointment</a>
+            </li>
+            <li><a href="/contact/">Contact Us</a></li>
+        </ul>
+    </nav>
+</div>
 
+<ul class="sidenav" id="mobile-links">
+    <li><a href="/">Home</a></li>
+    <li><a href="/about/">About Us</a></li>
+    <li><a href="/team/">Our Team</a></li>
+    <li><a href="/services/">Services</a></li>
+    <li><a href="/appointment/" class="waves-effect waves-light btn">Make Appointment</a></li>
+    <li><a href="/contact/">Contact Us</a></li>
+</ul>
 
-
-                <li>
-                    <a class="page-scroll" href="/">Home</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="/about/">About Us</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="/team/">Our Team</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="/services/">Services</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="/appointment/">Book Appointment</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="/contact/">Contact Us</a>
-                </li>
-
-
-
-                {{!-- <li>
-                    <a class="page-scroll" href="/pricing/">Pricing</a>
-                </li> --}}
-
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container -->
-</nav>
+<!-- navbar ends -->

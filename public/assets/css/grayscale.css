@@ -1,437 +1,388 @@
-/*!
- * Start Bootstrap - Grayscale v3.3.7+1 (http://startbootstrap.com/template-overviews/grayscale)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
- */
- body {
-  width: 100%;
-  height: 100%;
-  font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: white;
-  background-color: white;
-}
-html {
-  width: 100%;
-  height: 100%;
-  background: white;
+html{
+  scroll-behavior: smooth;
 }
 
-ul {
-  padding: 0;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0 0 35px;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-p {
-  margin: 0 0 25px;
-  font-size: 18px;
-  line-height: 1.5;
-}
-@media (min-width: 768px) {
-  p {
-    margin: 0 0 35px;
-    font-size: 20px;
-    line-height: 1.6;
-  }
-}
-a {
-  color: #42DCA3;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-a:hover,
-a:focus {
-  text-decoration: none;
-  color: #1d9b6c;
-  cursor: default;
-}
-.light {
-  font-weight: 400;
-}
-.navbar-custom {
-  margin-bottom: 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: black;
-}
-.navbar-custom .navbar-toggle {
-  color: white;
-  background-color: rgba(255, 255, 255, 0.2);
-  font-size: 12px;
-}
-.navbar-custom .navbar-toggle:focus,
-.navbar-custom .navbar-toggle:active {
-  outline: none;
-}
-.navbar-custom .navbar-brand {
-  font-weight: 700;
-}
-.navbar-custom .navbar-brand:focus {
-  outline: none;
-}
-.navbar-custom a {
-  color: blue;
-}
-.navbar-custom .nav li a {
-  -webkit-transition: background 0.3s ease-in-out;
-  -moz-transition: background 0.3s ease-in-out;
-  transition: background 0.3s ease-in-out;
-}
-.navbar-custom .nav li a:hover {
-  color: rgb(109, 86, 86);
-  outline: none;
-  background-color: transparent;
-}
-.navbar-custom .nav li a:focus,
-.navbar-custom .nav li a:active {
-  outline: none;
-  background-color: transparent;
-}
-.navbar-custom .nav li.active {
-  outline: none;
-}
-.navbar-custom .nav li.active a {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-.navbar-custom .nav li.active a:hover {
-  color: white;
-}
-@media (min-width: 768px) {
-  .navbar-custom {
-    padding: 20px 0;
-    border-bottom: none;
-    letter-spacing: 1px;
-    background: transparent;
-    -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
-    -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
-    transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
-  }
-  .navbar-custom.top-nav-collapse {
-    padding: 10px;
-    background: rgb(97, 89, 89);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  }
-}
-.intro {
-  display: table;
-  width: 100%;
-  height: auto;
-  padding: 100px 0;
-  text-align: center;
-  color: white;
-  background: url(../img/main.jpg) no-repeat bottom center scroll;
-  background-color: black;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-}
-.intro .intro-body {
-  display: table-cell;
-  vertical-align: middle;
-}
-.intro .intro-body .brand-heading {
-  font-size: 40px;
-}
-.intro .intro-body .intro-text {
-  font-size: 18px;
-}
-@media (min-width: 768px) {
-  .intro {
-    height: 100%;
-    padding: 0;
-  }
-  .intro .intro-body .brand-heading {
-    font-size: 80px;
-  }
-  .intro .intro-body .intro-text {
-    font-size: 26px;
-  }
-}
-.btn-circle {
-  width: 70px;
-  height: 70px;
-  margin-top: 15px;
-  padding: 7px 16px;
-  border: 2px solid white;
-  border-radius: 100% !important;
-  font-size: 40px;
-  color: white;
-  background: transparent;
-  -webkit-transition: background 0.3s ease-in-out;
-  -moz-transition: background 0.3s ease-in-out;
-  transition: background 0.3s ease-in-out;
-}
-.btn-circle:hover,
-.btn-circle:focus {
-  outline: none;
-  color: white;
-  background: rgba(255, 255, 255, 0.1);
-}
-.btn-circle i.animated {
-  -webkit-transition-property: -webkit-transform;
-  -webkit-transition-duration: 1s;
-  -moz-transition-property: -moz-transform;
-  -moz-transition-duration: 1s;
-}
-.btn-circle:hover i.animated {
-  -webkit-animation-name: pulse;
-  -moz-animation-name: pulse;
-  -webkit-animation-duration: 1.5s;
-  -moz-animation-duration: 1.5s;
-  -webkit-animation-iteration-count: infinite;
-  -moz-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  -moz-animation-timing-function: linear;
-}
-@-webkit-keyframes pulse {
-  0% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-  }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-}
-@-moz-keyframes pulse {
-  0% {
-    -moz-transform: scale(1);
-    transform: scale(1);
-  }
-  50% {
-    -moz-transform: scale(1.2);
-    transform: scale(1.2);
-  }
-  100% {
-    -moz-transform: scale(1);
-    transform: scale(1);
-  }
-}
-
-.download-section {
-  width: 100%;
-  padding: 50px 0;
-  color: white;
-  background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
-  background-color: black;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-}
-
-.btn {
-  text-transform: uppercase;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  border-radius: 0;
-}
-.btn-default {
-  border: 1px solid #42DCA3;
-  color: #42DCA3;
-  background-color: transparent;
-}
-.btn-default:hover,
-.btn-default:focus {
-  border: 1px solid #42DCA3;
-  outline: none;
-  color: black;
-  background-color: #42DCA3;
-}
-ul.banner-social-buttons {
-  margin-top: 0;
-}
-@media (max-width: 1199px) {
-  ul.banner-social-buttons {
-    margin-top: 15px;
-  }
-}
-@media (max-width: 767px) {
-  ul.banner-social-buttons li {
-    display: block;
-    margin-bottom: 20px;
-    padding: 0;
-  }
-  ul.banner-social-buttons li:last-child {
-    margin-bottom: 0;
-  }
-}
-footer {
-  padding: 10px 0;
-  background-color: #1d9b6c;
-}
-footer p {
-  font-size: 15px;
-}
 
 body {
-  webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
+  font-family: 'El Messiri', sans-serif;
+  font-size: 14px; 
+  margin: 0;
 }
 
-/* Custom CSS Begin */
-#plans {
-  margin-top: 10%;
+/* Admin */
+
+#admin-body, #registration-body{
+  background-image: url(/assets/img/saffu-Ct1Mx5OTn9A-unsplash.jpg);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-
-
-.positives_list {
-  display: table;
+#registration-container{
+  width: 50%;
+  background-color: aliceblue;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom:20px;
 }
 
-.positives_list li {
-  display: table-cell;
-  font-size: 24px;
-}
-
-.shield-icon {
-  width: 4em;
-  margin-top: 0;
-}
-
-.navbar {
-  background: white;
-}
-
-.navbar-brand {
-  padding: 0;
-  padding-top: 0;
-  width: 200px;
-  margin-bottom: 5px;
-}
-
-p {
-    margin: 0;
-    font-size: 1.2em;
-    line-height: 1.2;
-}
-
-@media (min-width: 768px) {
-  .intro-body {
-    padding-top: 4em;
-  }
-
-  .brand-heading {
-    font-size: 7em;
-  }
-
-  p {
-    margin: 0;
-    font-size: 20px;
-    line-height: 1.2;
-  }
-}
-
-/* Login CSS Start */
-
-/****** LOGIN MODAL ******/
-.loginmodal-container {
-  color: black;
-  padding: 30px;
-  max-width: 350px;
-  width: 100% !important;
-  background-color: #F7F7F7;
-  margin: 0 auto;
-  border-radius: 2px;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-  overflow: hidden;
-}
-
-.loginmodal-container h1 {
+#login-modal{
   text-align: center;
-  font-size: 1.8em;
+  border-radius: 10px;
+  width: 600px;
+  height: 400px;
 }
 
-.loginmodal-container input[type=submit] {
-  width: 100%;
-  display: block;
-  margin-bottom: 10px;
+.login-help a{
+  color: #1f295e;
+}
+
+/* nav */
+
+.nav-wrapper{
+  background-color: #5c6bc0;
+}
+
+.navbar-nav>li>a{
+  padding-top:20px;
+}
+
+.brand-logo{
+  margin-left: 20px;
+}
+
+ul>li:last-child{
+  margin-right:20px;
+}
+
+
+/* Index */
+
+#menu img{
+  height: 500px;
+  margin-top:10px;
+  box-shadow: 5px 5px 5px rgba(14, 13, 13, 0.5);
+}
+
+#menu img:hover{
+  box-shadow: 15px 15px 15px rgba(14, 13, 13, 0.5);
+transform: translate(5px,10px);
+cursor: pointer;
+transition: box-shadow 1s, transform 1s;
+}
+#menu h4{
+  position: absolute;
+  z-index: 1;
+  margin-top: 450px;
+  background-color: rgba(83, 88, 133, 0.384);
+  color: white;
+  padding: 10px;
+  border-radius: 0 50px 0 50px;
+  width:290px;
+  text-align: center;
+}
+
+#about{
+  margin-left: 50px;
+}
+
+#massage-benefits{
+  margin-top: 50px;
+  margin-left: 50px;
+  border:1px solid black;
+}
+
+ol {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+
+/* footer */
+
+.fas{
+  position: relative;
+  font-size:2rem;
+}
+
+.fab{
+  font-size:2rem;
+}
+
+.material-icons, .fas{
+  margin-right:10px;
   position: relative;
 }
 
-.loginmodal-container input[type=text], input[type=password] {
-  height: 44px;
-  font-size: 16px;
+
+.footer-form{
+  margin-left:40px;
   width: 100%;
-  margin-bottom: 10px;
-  -webkit-appearance: none;
-  background: #fff;
-  border: 1px solid #d9d9d9;
-  border-top: 1px solid #c0c0c0;
-  /* border-radius: 2px; */
-  padding: 0 8px;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
 }
 
-.loginmodal-container input[type=text]:hover, input[type=password]:hover {
-  border: 1px solid #b9b9b9;
-  border-top: 1px solid #a0a0a0;
-  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
-  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
-  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+.container{
+width: 80%;
 }
 
-.loginmodal {
+#footer-content{
+  padding:20px;
+}
+
+.map,#footer-content{
+  margin-top:20px;
+}
+
+a{
+  color: white;
+}
+
+.page-footer{
+  padding:0;
+}
+
+.btn{
+  background-color: #5c6bc0;
+}
+
+.btn.appointment{
+  background-color: #1f295e;
+}
+
+/* About Us page */
+
+.hero {
+  width: 100vw;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  font-size: 14px;
-  font-family: 'Arial', sans-serif;
-  font-weight: 700;
-  height: 36px;
-  padding: 0 8px;
-/* border-radius: 3px; */
-/* -webkit-user-select: none;
-  user-select: none; */
+  color: white; 
+  background-image: url('/assets/img/main-blurred.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-.loginmodal-submit {
-  /* border: 1px solid #3079ed; */
-  border: 0px;
-  color: #fff;
-  text-shadow: 0 1px rgba(0,0,0,0.1); 
-  background-color: #4d90fe;
-  padding: 17px 0px;
-  font-size: 14px;
-  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#4787ed)); */
+.hero h1 {
+  font-size: 5em;
+  margin-top: 30px;
+  margin-bottom: 0.5em;
 }
 
-.loginmodal-submit:hover {
-  /* border: 1px solid #2f5bb7; */
-  border: 0px;
-  text-shadow: 0 1px rgba(0,0,0,0.3);
-  background-color: #357ae8;
-  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8)); */
+.about-content h6{
+  text-align: right;
 }
 
-.loginmodal-container a {
-  text-decoration: none;
-  color: #666;
-  font-weight: 400;
+
+.about-content, .services-content, .other-services-content{
+  margin-top:30px;
+  background-color: aliceblue;
+  border: 40px solid aliceblue;
+}
+
+.about-content img, .services-content img{
+  padding-bottom: 20px;
+  width: 200px;
   text-align: center;
-  display: inline-block;
-  opacity: 0.6;
-  transition: opacity ease 0.5s;
-} 
-
-.login-help{
-  font-size: 12px;
+  float: left;
+  padding-right: 20px;
+  position: relative;
 }
 
-/* Login CSS End */
+.services-content, .other-services-content{
+  width: 450px;
+}
+
+/* team page */
+
+#team-body{
+  background-image: url('/assets/img/balance-blurred.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#team-body h2{
+  color: white;
+}
+
+.team-content{
+  margin-top:30px;
+  background-color: aliceblue;
+  border: 40px solid aliceblue;
+  height:300px;
+}
+
+.team-content img{
+  padding-bottom: 20px;
+  width: 200px;
+  text-align: center;
+  float: left;
+  padding-right: 20px;
+  position: relative;
+}
+
+
+/* services */
+.services-hero{
+  width: 100vw;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white; 
+  background-image: url('/assets/img/candle-blurred.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.other-services-content img{
+  padding-bottom: 10px;
+  width: 150px;
+  text-align: center;
+  float: left;
+  padding-right: 20px;
+  position: relative;
+}
+
+.services-content, .other-services-content{
+  height:320px;
+}
+
+/* appointment page */
+
+#appointment-body{
+  background-image: url(/assets/img/balanced-stones.jpg);
+  background-attachment: fixed;
+}
+
+#appointment-body h3{
+  color: rgb(32, 46, 131);
+  text-shadow: 2px 2px white;
+  font-weight: bold;
+}
+
+
+/* contact us */
+
+#contact-container{
+  width: 50%;
+  background-color: aliceblue;
+  margin-top:50px;
+  margin-bottom:50px;
+  padding:20px;
+  border-radius: 5px;
+}
+
+#contact-page{
+  background-image: url(/assets/img/waterfall-blurred.jpg)
+}
+
+#contact-container h5{
+  color: #5c6bc0;
+  font-weight: bold;
+}
+
+/* Ipad-responsiveness */
+@media screen and (max-width: 1024px) {
+/* team */
+  .team-content{
+    height:350px;
+}
+
+#menu img{
+  height: 400px;
+}
+
+#menu h4{
+  margin-top: 350px;
+  width:230px;
+}
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+  /* Admin */
+
+  #registration-container{
+    width: 80%;
+  }
+
+  /* index */
+  #menu img,  #menu h4{
+      margin-left: 40px;
+  }
+
+   /* team */
+   .team-content{
+    height:500px;
+  }
+
+
+}
+
+/* Mobile-responsiveness */
+@media screen and (max-width:670px){
+
+  /* Admin */
+  #registration-container{
+    width: 100%;
+  }
+
+  /* index */
+  #menu img{
+      height: 300px;
+      margin-left: 30px;
+  }
+
+  #menu h4{
+      margin-top: 270px;
+      position: absolute;
+      font-size: 25px;
+      width:170px;
+      margin-left: 30px;  
+  }
+  
+  #massage-benefits,#about{
+      margin-top: 10px;
+      margin-left: 0;
+  }
+
+  nav .brand-logo{
+      font-size:18px;
+      margin-left: 0;
+  }
+
+  .footer-form{
+      margin-left:10px;
+  }
+
+
+  /* about */
+  #contact-container{
+    width: 80%;
+  }
+
+/* team */
+.team-content{
+  height:700px;
+}
+
+  /* services */
+
+  .services-content, .other-services-content{
+    height:350px;
+  }
+
+.services.container{
+  margin-left:0;
+}
+  
+}

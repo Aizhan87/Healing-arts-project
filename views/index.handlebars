@@ -1,65 +1,57 @@
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-    {{> nav-customer }}
-    {{!-- {{> login-modal }} --}}
-    <!-- Intro Header -->
-    <header class="intro">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h2 class="brand-heading">Create peace of mind</h2>
-                        {{!-- <h2>Learn more</h2> --}}
-                        {{!-- <h3><a class="page-scroll" data-toggle="modal" data-target="#login-modal">Sign Up</a> for free
-                            and you get:</h3> --}}
-                        <ul class="positives_list">
-                            <li>Streaming updates on security status using a variety of different factors.</li>
-                            <li>Locations of active safe zones and hospitals, police, and more</li>
-                            <li>Highly customized for each, specific region using security data for the locations you'll
-                                be traveling to.</li>
-                        </ul>
-                        </ul>
-                        <a href="#contact" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
-                    </div>
-                </div>
+{{> nav-customer }}
+<!-- menu -->
+<div class="row" id="menu">
+
+    <div class="col s6 m6 l3">
+        <h4 data-aos="fade-down"><a href="/services">Meditation</a></h4><img
+            src="assets/img//adrian-motroc-DhIarbBYCWU-unsplash.jpg" alt="meditaion" data-aos="fade-up">
+    </div>
+    <div class="col s6 m6 l3">
+        <h4 data-aos="fade-down" data-aos-delay="200"><a href="/services">Healing</a></h4><img
+            src="assets/img/darius-bashar-xMNel_otvWs-unsplash.jpg" alt="healing" data-aos="fade-up"
+            data-aos-delay="200">
+    </div>
+    <div class="col s6 m6 l3">
+        <h4 data-aos="fade-down" data-aos-delay="400"><a href="/services">Massage</a></h4><img
+            src="assets/img/female-relaxing-at-spa.jpg" alt="massage" data-aos="fade-up" data-aos-delay="400">
+    </div>
+    <div class="col s6 m6 l2">
+        <h4 data-aos="fade-down" data-aos-delay="600"><a href="/services">Rehabilitation</a></h4><img
+            src="assets/img/toa-heftiba-a9pFSC8dTlo-unsplash.jpg" alt="rehabilitation" data-aos="fade-up"
+            data-aos-delay="600">
+    </div>
+</div>
+
+<section id="about">
+    <div class="row">
+        <div class="col s12 m6" data-aos="fade-right">
+            <div class="center-align">
+                <h5 class="indigo-text text-darken-4">Welcome to The Healing Arts Center</h5>
+                <h6>Beverly Hills</h6>
             </div>
-        </div>
-    </header>
+            <p>The Healing Arts Center was created by Tim Green. The idea behind it was to create a space/sanctuary that
+                promotes healing, nurturing, motivation, and creativity to provide non-judgemental and accepting
+                environment that allows whoever enters to express themselves, release fears, stress, and longtime
+                baggages. To honor the space and everyone who enters. To allow abundance. To flow through the space. To
+                bless and clean the space, as well as to create a light that brings to people a spiritual,
+                an emotional, and a physical healing.</p>
 
-    <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact Start Bootstrap</h2>
-                <p>Feel free to email us to provide some feedback on our templates, give us suggestions for new
-                    templates and themes, or to just say hello!</p>
-                <p><a href="mailto:trnrtim@aol.com">trnrtim@aol.com</a>
-                </p>
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i
-                                class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i
-                                class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                    </li>
-                    <li>
-                        <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i
-                                class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
-                    </li>
-                </ul>
-            </div>
         </div>
-    </section>
-
-    <!-- Map Section -->
-    <div id="map"></div>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container text-center">
-            <p>Copyright &copy; Your Website 2016</p>
+        <div class="col s12 m5" data-aos="fade-left" data-aos-delay="200" id="massage-benefits">
+            <h5 class="center-align">Benefits of Massage</h5>
+            <ol>
+                <li>Reduce Stress</li>
+                <li>Improve Circulation</li>
+                <li>Reduce Pain</li>
+                <li>Eliminate Toxins</li>
+                <li>Reduce Fatique</li>
+                <li>Enhance Immunity</li>
+                <li>Speeds Healing</li>
+                <li>Joint Mobilization</li>
+            </ol>
         </div>
-    </footer>
+    </div>
+</section>
+
+
+{{>footer}}
