@@ -5,21 +5,21 @@
         <div class="col s12">
             <h5>We value the feedback and queries from all our customers. Your messages will be answered in a timely
                 fashion.</h5>
-            <form>
+            <form action= "/burger/add" method="POST">
                 <div class="input-field">
                     <i class="material-icons prefix">person</i>
-                    <input type="text" id="client_name" class="validate">
-                    <label for="client_name">Your Name</label>
+                    <input type="text" id="name" class="validate" name="name">
+                    <label for="name">Your Name</label>
                 </div>
                 <div class="input-field">
                     <i class="material-icons prefix">email</i>
-                    <input type="email" id="client_email" class="validate">
-                    <label for="client_email">Your Email</label>
+                    <input type="email" id="email" class="validate" name="email">
+                    <label for="email">Your Email</label>
                 </div>
                 <div class="input-field">
                     <i class="material-icons prefix">phone</i>
-                    <input id="client_phone" type="tel" class="validate">
-                    <label for="client_phone">Your Telephone</label>
+                    <input id="phone" type="tel" class="validate" name="phone">
+                    <label for="phone">Your Telephone</label>
                 </div>
                 <div class="input-field">
                     <select>
@@ -32,12 +32,12 @@
 
                 <div class="input-field">
                     <i class="material-icons prefix">message</i>
-                    <textarea id="client_message" class="materialize-textarea" cols="20" rows="20"
-                        class="validate"></textarea>
-                    <label for="client_message">Your Message</label>
+                    <textarea id="message" class="materialize-textarea" cols="20" rows="20"
+                        class="validate" name="message"></textarea>
+                    <label for="message">Your Message</label>
                 </div>
                 <div class="input-field center">
-                    <button class="btn">Submit</button>
+                    <button class="btn" type="submit">Submit</button>
                 </div>
             </form>
         </div>
