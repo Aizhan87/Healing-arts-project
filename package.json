@@ -9,7 +9,7 @@
     "url": "https://github.com/Aizhan87/Healing-arts-project"
   },
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "node ./bin/www"
   },
   "devDependencies": {
     "font-awesome": "^4.6.3"
