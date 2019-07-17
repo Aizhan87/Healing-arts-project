@@ -9,7 +9,7 @@ module.exports = function (app) {
 	const services = require('./routes/services');
 	const appointment = require('./routes/appointment');
 	const contact = require('./routes/contact');
-	const application = require('./routes/application');
+	//const application = require('./routes/application');
 	const users = require('./routes/users');
 	const trips = require('./routes/trips');
 	const pricing = require('./routes/pricing');
@@ -21,11 +21,11 @@ module.exports = function (app) {
 	app.use('/services', services);
 	app.use('/appointment', appointment);
 	app.use('/contact', contact);
-	app.use('/admin', application);
+	app.use('/admin', customer_database_controller);
 	app.use('/users', users);
 	app.use('/trips', trips);
 	app.use('/pricing', pricing);
-	app.use("/burger", customer_database_controller);
+	//app.use("/", customer_database_controller);
 
 
 }

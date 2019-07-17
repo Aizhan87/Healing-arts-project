@@ -4,12 +4,17 @@ var moment = require('moment');
 var router = express.Router();
 var path = require('path');
 
-router.get('/display', function (req,res) {
+router.get('/', function (req,res) {
     db.Customer.findAll({}).then(function(data){
         console.log(data);
-        res.render("/burger/admin", {customers: data});
+        //res.send({ redirect: '/admin' });
+        res.render('admin', {customers: data});
     });
 });
+
+// router.get('/', function(req, res) {
+//     res.render('admin');
+// })
 
 router.post('/admin', function(req, res) {
     var idVal = parseInt(req.params);

@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "cny8bw0rbikxsg2c",
-    "password": "zyu9r0m4lwbaqf5s",
-    "database": "s1591mm7wfyes3ap",
-    "host": "wp433upk59nnhpoh.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "username": "root",
+    "password": "violeta86",
+    "database": "travelSecure_development",
+    "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "test": {
