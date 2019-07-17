@@ -7,41 +7,42 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                      <div class="row">
-    <div class="panel panel-primary">
-        <!-- Default panel contents -->
-        <div class="panel-heading">Customer Database </div>
+                        <div class="row">
+                            <div class="panel panel-primary">
+                                <!-- Default panel contents -->
+                                <div class="panel-heading">Customer Database </div>
 
-        <!-- Table -->
-        <table class="table">
-            <thead>
-            <th>id</th>
-            <th>name</th>
-            <th>email</th>
-            <th>phone</th>
-            <th>message</th>
-            </thead>
-            <tbody>
-            {{#each customers}}
-                {{!-- {{console.log(customers)}} --}}
-                    <tr>
-                        <form action="/admin" method="GET">
-                            <th scope="row" class="green">{{this.id}}</th>
-                            <th class="green">{{this.name}}</th>
-                            <th class="green ">{{this.email}}</th>
-                            <th class="green ">{{this.message}}</th>
-                           
-                            {{!-- <th>
+                                <!-- Table -->
+                                <table class="table">
+                                    <thead>
+                                        <th>id</th>
+                                        <th>name</th>
+                                        <th>email</th>
+                                        <th>phone</th>
+                                        <th>message</th>
+                                    </thead>
+                                    <tbody>
+                                        {{#each customers}}
+                                        {{!-- {{console.log(customers)}} --}}
+                                        <tr>
+                                            <form action="/admin" method="GET">
+                                                <th scope="row" class="green">{{this.id}}</th>
+                                                <th class="green">{{this.name}}</th>
+                                                <th class="green ">{{this.email}}</th>
+                                                <th class="green ">{{this.phone}}</th>
+                                                <th class="green ">{{this.message}}</th>
+
+                                                {{!-- <th>
                                 <button id="{{this.id}}" type="submit" class="btn btn-primary">Add Me!</button>
                             </th>
                         </form>
                     </tr> --}}
-                
-            {{/each}}
-            </tbody>
-        </table>
-    </div>
-</div>
+
+                                                {{/each}}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
 
                     </div>
                 </div>

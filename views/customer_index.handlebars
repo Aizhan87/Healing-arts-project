@@ -6,33 +6,31 @@
         <!-- Table -->
         <table class="table">
             <thead>
-            <th>id</th>
-            <th>name</th>
-            <th>email</th>
-            <th>phone</th>
-            <th>message</th>
+                <th>id</th>
+                <th>name</th>
+                <th>email</th>
+                <th>phone</th>
+                <th>message</th>
             </thead>
             <tbody>
-            {{#each customers}}
-                
-                    <tr>
-                        <form action="/burger/add{{id}}" method="GET">
-                            <th scope="row" class="green">{{this.id}}</th>
-                            <th class="green">{{this.name}}</th>
-                            <th class="green ">{{this.email}}</th>
-                            <th class="green ">{{this.message}}</th>
-                           
-                            {{!-- <th>
+                {{#each customers}}
+
+                <tr>
+                    <form action="/burger/add{{id}}" method="GET">
+                        <th scope="row" class="green">{{this.id}}</th>
+                        <th class="green">{{this.name}}</th>
+                        <th class="green ">{{this.email}}</th>
+                        <th class="green ">{{this.phone}}</th>
+                        <th class="green ">{{this.message}}</th>
+
+                        {{!-- <th>
                                 <button id="{{this.id}}" type="submit" class="btn btn-primary">Add Me!</button>
                             </th> --}}
-                        </form>
-                    </tr>
-                
-            {{/each}}
+                    </form>
+                </tr>
+
+                {{/each}}
             </tbody>
         </table>
     </div>
 </div>
-
-
-
