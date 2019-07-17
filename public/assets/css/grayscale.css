@@ -372,17 +372,19 @@ a{
 
 /* team */
 .team-content{
-  height:700px;
+  height:900px;
 }
 
   /* services */
 
   .services-content, .other-services-content{
-    height:350px;
+    height:450px;
+    width:350px;
   }
 
 .services.container{
   margin-left:0;
 }
+
   
 }
